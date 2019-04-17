@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Do this survey</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <form id="friendForm" class="d-flex flex-column " action="/api/friends" method="POST">
+
+            <input id="inputName" type="text" name="name" value="" placeholder="Name Here">
+            <input id="pictureUrl" type="text" name="photo" value="" placeholder="Picture URL Here">
+            click on options (1 for don't agree, 5 for strongly agree)
+            <fieldset id="firstQ" class="form-group">
+                <legend class="pt-0 ">Dog is a dog</legend>
+
+                <input type="radio" name="score[0]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[0]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[0]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[0]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[0]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+            <fieldset id="secondeQ" class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[1]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[1]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[1]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[1]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[1]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[2]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[2]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[2]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[2]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[2]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[3]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[3]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[3]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[3]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[3]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[4]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[4]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[4]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[4]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[4]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[5]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[5]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[5]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[5]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[5]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[6]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[6]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[6]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[6]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[6]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[7]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[7]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[7]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[7]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[7]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[8]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[8]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[8]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[8]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[8]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+
+            <fieldset class="form-group ">
+                <legend class="pt-0 ">Radios</legend>
+
+                <input type="radio" name="score[9]" id="circle1" value="1" checked>
+                <label class="form-check-label" for="circle1">
+                    1
+                </label>
+                <input type="radio" name="score[9]" id="circle2" value="2">
+                <label class="form-check-label" for="circle2">
+                    2
+                </label>
+                <input type="radio" name="score[9]" id="circle3" value="3">
+                <label class="form-check-label" for="circle3">
+                    3
+                </label>
+                <input type="radio" name="score[9]" id="circle4" value="4">
+                <label class="form-check-label" for="circle4">
+                    4
+                </label>
+
+                <input type="radio" name="score[9]" id="circle5" value="5">
+                <label class="form-check-label" for="circle5">
+                    5
+                </label>
+
+            </fieldset>
+
+            <button id="submitButton">button</button>
+        </form>
+    </div>
+    <script>
+
+        $('#friendForm').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                method: 'POST',
+                url: '/api/friends',
+                data: $('#friendForm').serialize(),
+                success: function () {
+                    alert("submitted");
+                    $("#friendForm")[0].reset()
+                    showFriend();
+                }
+            });
+
+
+        });
+
+        function showFriend() {
+            $({
+                url: "api/friends",
+                method: "GET",
+            }).then(function (res) {
+                console.log(res);
+            })
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
