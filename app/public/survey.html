@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,9 +26,9 @@
 
             <input id="inputName" type="text" name="name" value="" placeholder="Name Here">
             <input id="pictureUrl" type="text" name="photo" value="" placeholder="Picture URL Here">
-            click on options (1 for don't agree, 5 for strongly agree)
+            (1 strongly disagree -- 5 strongly agree)
             <fieldset id="firstQ" class="form-group">
-                <legend class="pt-0 ">Dog is a dog</legend>
+                <legend class="pt-0 ">Doge is best doge</legend>
 
                 <input type="radio" name="score[0]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -49,7 +55,7 @@
             </fieldset>
 
             <fieldset id="secondeQ" class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">Whens mahvel?</legend>
 
                 <input type="radio" name="score[1]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -77,7 +83,7 @@
 
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">Did you reach your final form?</legend>
 
                 <input type="radio" name="score[2]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -105,7 +111,7 @@
 
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">You have 100 pounds of feathers and 100 pounds of rocks which one is heavier?</legend>
 
                 <input type="radio" name="score[3]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -132,7 +138,7 @@
             </fieldset>
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">Pineapple on pizza</legend>
 
                 <input type="radio" name="score[4]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -159,7 +165,7 @@
             </fieldset>
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">Have you ever licked your elbow and it tasted like salt?</legend>
 
                 <input type="radio" name="score[5]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -187,7 +193,7 @@
 
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">Did that last question make you try to lick your elbow?</legend>
 
                 <input type="radio" name="score[6]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -215,7 +221,7 @@
 
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">This survey is nonsensical and means nothing?</legend>
 
                 <input type="radio" name="score[7]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -243,7 +249,7 @@
 
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">You and Sonic the Hedgehog walk into a bar and you say "Hey man you look a little blue"?</legend>
 
                 <input type="radio" name="score[8]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -271,7 +277,7 @@
 
 
             <fieldset class="form-group ">
-                <legend class="pt-0 ">Radios</legend>
+                <legend class="pt-0 ">You just wasted your time</legend>
 
                 <input type="radio" name="score[9]" id="circle1" value="1" checked>
                 <label class="form-check-label" for="circle1">
@@ -297,37 +303,114 @@
 
             </fieldset>
 
-            <button id="submitButton">button</button>
+            <button id="submitButton" data-toggle="modal" data-target="#modalBoi">button</button>
         </form>
     </div>
+
+
+
+    <div class="modal fade" id="modalBoi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mudaMuda">Your New Best Friend</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script>
+
+        let newtotal = 0;
+        let totalArray = [];
+        let diffArray = [];
+
+
+
 
         $('#friendForm').on('submit', function (e) {
             e.preventDefault();
-
             $.ajax({
                 method: 'POST',
                 url: '/api/friends',
                 data: $('#friendForm').serialize(),
                 success: function () {
-                    alert("submitted");
                     $("#friendForm")[0].reset()
-                    showFriend();
-                }
-            });
+                    newFriendTotal();
 
+
+                }
+
+            })
 
         });
 
-        function showFriend() {
-            $({
+
+        function newFriendTotal() {
+            newtotal = 0;
+            $.ajax({
                 url: "api/friends",
                 method: "GET",
             }).then(function (res) {
-                console.log(res);
+                for (let i = 0; i < res[res.length - 1].score.length; i++) {
+                    newtotal += parseInt(res[res.length - 1].score[i]);
+                }//end for
+                console.log(newtotal);
+                allTotatals();
+            })//then
+        }//func
+
+        function allTotatals() {
+            totalArray = [];
+            $.ajax({
+                url: "api/friends",
+                method: "GET",
+            }).then(function (res) {
+                for (let i = 0; i < res.length - 1; i++) {
+                    let total = 0
+
+
+                    for (let j = 0; j < res[i].score.length; j++) {
+                        total += parseInt(res[i].score[j]);
+
+                        // total += parseInt(res[i].score[j]);
+                    }//j
+                    console.log(total);
+                    totalArray.push(total);
+                }//i
+                getDiff(totalArray, newtotal);
+                console.log();;
+            })//then
+        }//func
+
+
+        function getDiff(array, value) {
+            for (let i = 0; i < array.length; i++) {
+                diffArray.push(Math.abs(array[i] - value))
+            }
+            $.ajax({
+                url: "/api/friends",
+                method: "GET",
+            }).then(function (res) {
+                let friend = res[diffArray.indexOf(Math.min(...diffArray))]
+                console.log(friend);
+                $(".modal-body").empty();
+                $(".modal-body").append(`<p>${friend.name}`);
+                $(".modal-body").append(`<img src="${friend.photo}" height="200" width="200">`);
+
             })
         }
-
 
     </script>
 
